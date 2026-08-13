@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journal | SafeNest</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <a href="dashboard.html" class="logo">💙 SafeNest</a>
+</header>
+
+<main class="page">
+
+    <div class="section-heading">
+        <span class="badge">Private space</span>
+        <h1>My Journal 📖</h1>
+        <p>Write freely. Reflect honestly.</p>
+    </div>
+
+    <div class="card">
+
+        <input
+            type="text"
+            id="journalTitle"
+            placeholder="Journal title"
+        >
+
+        <textarea
+            id="journalContent"
+            rows="10"
+            placeholder="Write what's on your mind..."
+        ></textarea>
+
+        <button class="btn primary" onclick="saveJournal()">
+            Save Entry
+        </button>
+
+    </div>
+
+    <div class="card">
+        <h2>Previous entries</h2>
+        <div id="journalEntries"></div>
+    </div>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

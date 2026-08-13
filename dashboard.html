@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | SafeNest</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <a href="dashboard.html" class="logo">💙 SafeNest</a>
+
+    <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="mood.html">Mood</a>
+        <a href="journal.html">Journal</a>
+        <a href="community.html">Community</a>
+        <a href="wellness.html">Wellness</a>
+        <a href="crisis.html">Crisis</a>
+    </nav>
+</header>
+
+
+<main class="dashboard">
+
+    <section class="dashboard-header">
+        <div>
+            <span class="badge">Your personal space</span>
+            <h1>Hello, <span id="dashboardUsername">there</span> 💙</h1>
+            <p>How are you feeling today?</p>
+        </div>
+    </section>
+
+
+    <section class="quick-mood">
+
+        <button onclick="selectMood('Happy')">😊<span>Happy</span></button>
+        <button onclick="selectMood('Calm')">🙂<span>Calm</span></button>
+        <button onclick="selectMood('Neutral')">😐<span>Neutral</span></button>
+        <button onclick="selectMood('Sad')">😔<span>Sad</span></button>
+        <button onclick="selectMood('Anxious')">😰<span>Anxious</span></button>
+
+    </section>
+
+
+    <section class="dashboard-grid">
+
+        <a href="mood.html" class="dashboard-card">
+            <span>📊</span>
+            <h3>Mood Tracker</h3>
+            <p>Check your emotional patterns.</p>
+        </a>
+
+        <a href="journal.html" class="dashboard-card">
+            <span>📖</span>
+            <h3>Journal</h3>
+            <p>Write down what's on your mind.</p>
+        </a>
+
+        <a href="community.html" class="dashboard-card">
+            <span>💬</span>
+            <h3>Community</h3>
+            <p>Connect anonymously.</p>
+        </a>
+
+        <a href="wellness.html" class="dashboard-card">
+            <span>🌱</span>
+            <h3>Wellness</h3>
+            <p>Take care of yourself.</p>
+        </a>
+
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

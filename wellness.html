@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellness | SafeNest</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <a href="dashboard.html" class="logo">💙 SafeNest</a>
+</header>
+
+<main class="page">
+
+    <div class="section-heading">
+        <span class="badge">Take care of yourself</span>
+        <h1>Wellness Centre 🌱</h1>
+        <p>Take a moment to slow down.</p>
+    </div>
+
+    <div class="wellness-grid">
+
+        <div class="card">
+            <span class="large-icon">🌬️</span>
+            <h2>Breathing Exercise</h2>
+            <p>Take slow, controlled breaths.</p>
+            <button class="btn primary" onclick="startBreathing()">
+                Start
+            </button>
+        </div>
+
+       <div class="card">
+    <span class="large-icon">🧘</span>
+    <h2>Mindfulness</h2>
+    <p>Take a few minutes to be present and focus on the moment.</p>
+
+    <button class="btn primary" onclick="startMindfulness()">
+        Begin
+    </button>
+</div>
+
+<div class="card">
+    <span class="large-icon">💭</span>
+    <h2>Reflection</h2>
+    <p>Take a moment to reflect on something positive in your life.</p>
+
+    <button class="btn primary" onclick="startReflection()">
+        Reflect
+    </button>
+</div>
+
+<div id="wellnessModal" class="wellness-modal hidden">
+    <div class="wellness-modal-content">
+
+        <button class="close-modal" onclick="closeWellnessModal()">
+            ×
+        </button>
+
+        <div id="wellnessModalIcon">🧘</div>
+
+        <h2 id="wellnessModalTitle">Mindfulness</h2>
+
+        <p id="wellnessModalText"></p>
+
+        <div id="reflectionInput" class="hidden">
+            <textarea
+                id="reflectionText"
+                placeholder="Write your thoughts here..."
+                rows="5"
+            ></textarea>
+
+            <button class="btn primary" onclick="saveReflection()">
+                Save Reflection
+            </button>
+        </div>
+
+    </div>
+</div>
+
+    </div>
+
+    <div id="breathingBox" class="breathing-box hidden">
+        <div id="breathingCircle"></div>
+        <h2 id="breathingText">Breathe in...</h2>
+    </div>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

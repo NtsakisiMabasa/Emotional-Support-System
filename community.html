@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community | SafeNest</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <a href="dashboard.html" class="logo">💙 SafeNest</a>
+</header>
+
+<main class="page">
+
+    <div class="section-heading">
+        <span class="badge">Anonymous community</span>
+        <h1>You are not alone 💬</h1>
+        <p>Share, listen and support one another.</p>
+    </div>
+
+    <div class="card">
+
+        <textarea
+            id="postContent"
+            rows="5"
+            placeholder="What's on your mind?"
+        ></textarea>
+
+        <button class="btn primary" onclick="createPost()">
+            Post Anonymously
+        </button>
+
+    </div>
+
+    <div id="communityPosts">
+
+        <article class="post">
+            <span class="anonymous-avatar">A</span>
+
+            <div>
+                <strong>Anonymous</strong>
+
+                <p>
+                    Today was difficult, but I'm trying to take
+                    things one day at a time.
+                </p>
+
+                <button>💙 Support</button>
+            </div>
+        </article>
+
+    </div>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

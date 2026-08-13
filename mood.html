@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Tracker | SafeNest</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <a href="dashboard.html" class="logo">💙 SafeNest</a>
+</header>
+
+<main class="page">
+
+    <div class="section-heading">
+        <span class="badge">Daily check-in</span>
+        <h1>How are you feeling?</h1>
+        <p>There is no right or wrong answer.</p>
+    </div>
+
+    <div class="mood-selector">
+
+        <button onclick="saveMood('Happy')">
+            😊
+            <span>Happy</span>
+        </button>
+
+        <button onclick="saveMood('Calm')">
+            🙂 
+            <span>Calm</span>
+        </button>
+
+        <button onclick="saveMood('Neutral')">
+            😐
+            <span>Neutral</span>
+        </button>
+
+        <button onclick="saveMood('Sad')">
+            😔
+            <span>Sad</span>
+        </button>
+
+        <button onclick="saveMood('Anxious')">
+            😰
+            <span>Anxious</span>
+        </button>
+
+    </div>
+
+    <div class="card">
+        <h2>Your mood history</h2>
+        <div id="moodHistory"></div>
+    </div>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
